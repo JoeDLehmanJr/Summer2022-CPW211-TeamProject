@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jjwes\\.nuget\\packages\\": {}
+    "C:\\Users\\joejr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DotNetProjectsSpring2022\\211AdvancedDotNetSummer2022\\Carshop\\Carshop\\Carshop.csproj",
+      "projectUniqueName": "E:\\OneDrive - Clover Park Technical College\\Courses\\CPW\\CPW211\\Online Course\\DotNet1\\Carshop\\Carshop\\Carshop\\Carshop.csproj",
       "projectName": "Carshop",
-      "projectPath": "C:\\DotNetProjectsSpring2022\\211AdvancedDotNetSummer2022\\Carshop\\Carshop\\Carshop.csproj",
-      "packagesPath": "C:\\Users\\jjwes\\.nuget\\packages\\",
-      "outputPath": "C:\\DotNetProjectsSpring2022\\211AdvancedDotNetSummer2022\\Carshop\\Carshop\\obj\\",
+      "projectPath": "E:\\OneDrive - Clover Park Technical College\\Courses\\CPW\\CPW211\\Online Course\\DotNet1\\Carshop\\Carshop\\Carshop\\Carshop.csproj",
+      "packagesPath": "C:\\Users\\joejr\\.nuget\\packages\\",
+      "outputPath": "E:\\OneDrive - Clover Park Technical College\\Courses\\CPW\\CPW211\\Online Course\\DotNet1\\Carshop\\Carshop\\Carshop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jjwes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joejr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
