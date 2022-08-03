@@ -1,0 +1,208 @@
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+@JoeDLehmanJr 
+@JoeLehmanJr
+JoeLehmanJr/C Sharp Controls abbreviation.txt
+Created 2 months ago • Report abuse
+0
+0
+Code
+Revisions
+1
+<script src="https://gist.github.com/JoeLehmanJr/fe495c94ce8b14098a4de383f14d13a6.js"></script>
+C# Controls abbreviation - Thanks andyyou
+C Sharp Controls abbreviation.txt
+ btn Button           chk CheckBox                ckl CheckedListBox 
+ cmb ComboBox         dtp DateTimePicker          lbl Label 
+ llb LinkLabel        lst ListBox                 lvw ListView 
+ mtx MaskedTextBox    cdr MonthCalendar           icn NotifyIcon 
+ nud NumeircUpDown    pic PictureBox              prg ProgressBar 
+ rdo RadioButton      rtx RichTextBox             txt TextBox 
+ tip ToolTip          tvw TreeView                wbs WebBrowser 
+
+Container
+ flp FlowLayoutPanel    grp GroupBox               pnl Panel 
+ spl SplitContainer     tab TabControl             tlp TableLayoutPanel 
+
+Menus and Toolbars
+ cms ContextMenuStrip 
+ mns MenuStrip 
+ ssr StatusStrip 
+ tsr ToolStrip 
+ tsc ToolStripContainer 
+
+Data Type
+ dts DataSet 
+ dgv DataGridView 
+ bds BindingSource 
+ bdn BindingNavigator 
+ rpv ReportViewer 
+
+Dialog
+ cld ColorDialog 
+ fbd FolderBrowserDialog 
+ fnd FontDialog 
+ ofd OpenFileDialog 
+ sfd SaveFileDialog 
+
+Components
+ bgw BackgroundWorker 
+ dre DirectoryEntry 
+ drs DirectorySearcher 
+ err ErrorProvider 
+ evl EventLog 
+ fsw FileSystemWatcher 
+ hlp HelpProvider 
+ img ImageList 
+ msq MessageQueue 
+ pfc PerformanceCounter 
+ prc Process 
+ spt SerialPort 
+ scl ServiceController 
+ tmr Timer 
+
+Print
+ psd PageSetupDialog 
+ prd PrintDialog 
+ pdc PrintDocument 
+ prv PrintPreviewControl 
+ ppd PrintPreviewDialog 
+
+Crystal Reports
+ crv CrystalReportViewer 
+ rpd ReportDocument 
+
+Other
+ dud DomainUpDown 
+ hsc HScrollBar 
+ prg PropertyGrid 
+ spl Splitter 
+ trb TrackBar 
+ vsc VScrollBar
+
+==============================================
+
+<!--------------A----------------->
+AdRotator                   ar
+
+
+<!--------------B----------------->
+Button                      btn
+
+
+<!--------------C----------------->
+Calender                    cal
+CheckBox                    chk
+CheckBoxList                chklst
+Column (DataGridView的)     col
+ColumnHeader (ListView 的)  ch
+Combobox                    cbo
+CompareValidator            cv
+CrystalReportViewer         rptvew
+
+
+<!--------------D----------------->
+DataGrid                    dg
+DataGridView                dgv
+DataList                    dl
+DomainUpDown                dud
+DropDownList                ddl
+
+
+<!--------------F----------------->
+FileUpload                  ful
+Form                        frm
+
+
+<!--------------G----------------->
+GridView                    gv
+GroupBox                    grp
+
+
+<!--------------H----------------->
+HiddenField                 hf
+
+
+<!--------------I----------------->
+Image                       img
+ImageButton                 imgbtn
+ImageList                   il
+
+
+<!--------------L----------------->
+Label                       lbl
+LinkButton                  lnkbtn
+ListBox                     lst
+ListView                    lv
+
+
+<!--------------M----------------->
+MenuStrip                   ms
+
+
+<!--------------O----------------->
+ObjectDataSource            ods
+
+
+<!--------------P----------------->
+PagedDataSource             pds
+Panel                       pnl
+PictureBox                  pic
+
+
+<!--------------R----------------->
+RadioButton                 rdo
+RadioButtonList             rdolst
+RangeValidator              rv
+RegularExpressionValidator  rev
+Repeater                    rpt
+RequiredFieldValidator      rfv
+
+
+<!--------------S----------------->
+StatusLabel                 slbl
+StatusStrip                 ss
+
+
+<!--------------T----------------->
+TabControl                  tab
+Table                       tbl
+TabPage                     tp
+TextBox                     txt 
+Timer                       tmr
+ToolStrip                   ts
+ToolStripButton             tsbtn
+ToolStripDropDownButton     tsddb
+ToolStripLabel              tslbl
+ToolStripMenuItem           tsmi
+TreeView                    tv/tvw
+
+
+<!--------------V----------------->
+ValidatorSummary            vs
+
+
+<!--------------W----------------->
+WebBrowser
+@JoeDLehmanJr
+ 
+Leave a comment
+No file chosen
+Attach files by dragging & dropping, selecting or pasting them.
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
