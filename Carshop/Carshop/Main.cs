@@ -19,5 +19,4 @@ namespace Carshop
             this.Close();
         }
     }
-    }
 }
