@@ -1,6 +1,6 @@
 ﻿namespace Carshop
 {
-    partial class Form1
+    partial class Mainfrm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Mainfrm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ControlBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Mainfrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ResumeLayout(false);
+
         }
 
         #endregion

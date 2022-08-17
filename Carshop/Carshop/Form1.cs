@@ -1,8 +1,8 @@
 namespace Carshop
 {
-    public partial class Form1 : Form
+    public partial class Mainfrm : Form
     {
-        public Form1()
+        public Mainfrm()
         {
             InitializeComponent();
         }
