@@ -18,5 +18,10 @@ namespace Carshop
         {
             this.Close();
         }
+
+        private void TimeSheetgrp_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
