@@ -34,22 +34,30 @@
             this.LogOutbtn = new System.Windows.Forms.Button();
             this.Exitbtn = new System.Windows.Forms.Button();
             this.TimeSheetgrp = new System.Windows.Forms.GroupBox();
-            this.StartShiftWithEmployeeNumberbtn = new System.Windows.Forms.Button();
-            this.EndShiftwithEmployeeNumberbtn = new System.Windows.Forms.Button();
             this.SignInToAJobbtn = new System.Windows.Forms.Button();
+            this.StartShiftWithEmployeeNumberbtn = new System.Windows.Forms.Button();
             this.SignOutOfAJobbtn = new System.Windows.Forms.Button();
+            this.EndShiftwithEmployeeNumberbtn = new System.Windows.Forms.Button();
             this.Jobgrp = new System.Windows.Forms.GroupBox();
-            this.ViewAllOpenJobsbtn = new System.Windows.Forms.Button();
-            this.ViewJobByLastNamebtn = new System.Windows.Forms.Button();
-            this.ViewJobByJobNumberbtn = new System.Windows.Forms.Button();
-            this.ViewAllJobsByPhoneNumbersbtn = new System.Windows.Forms.Button();
-            this.DeleteAJobbtn = new System.Windows.Forms.Button();
-            this.CreateAJobbtn = new System.Windows.Forms.Button();
             this.UpdateJobByLastNamebtn = new System.Windows.Forms.Button();
             this.UpdateJobByJobNumberbtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.CreateAJobbtn = new System.Windows.Forms.Button();
+            this.ViewAllOpenJobsbtn = new System.Windows.Forms.Button();
+            this.DeleteAJobbtn = new System.Windows.Forms.Button();
+            this.ViewJobByLastNamebtn = new System.Windows.Forms.Button();
+            this.ViewJobByJobNumberbtn = new System.Windows.Forms.Button();
+            this.ViewAllJobsByPhoneNumbersbtn = new System.Windows.Forms.Button();
+            this.Customergrp = new System.Windows.Forms.GroupBox();
+            this.CreateCustomerbtn = new System.Windows.Forms.Button();
+            this.ViewCustomerByKnownPhoneNumberbtn = new System.Windows.Forms.Button();
+            this.DeleteCustomerbtn = new System.Windows.Forms.Button();
+            this.ViewCustomersByJobNumberbtn = new System.Windows.Forms.Button();
+            this.ViewAllCustomersbtn = new System.Windows.Forms.Button();
+            this.UpdateCustomersbtn = new System.Windows.Forms.Button();
             this.TimeSheetgrp.SuspendLayout();
             this.Jobgrp.SuspendLayout();
+            this.Customergrp.SuspendLayout();
             this.SuspendLayout();
             // 
             // SignOutByLastNamebtn
@@ -82,6 +90,7 @@
             this.LogInbtn.TabIndex = 8;
             this.LogInbtn.Text = "Log In";
             this.LogInbtn.UseVisualStyleBackColor = true;
+            this.LogInbtn.Click += new System.EventHandler(this.LogInbtn_Click);
             // 
             // LogOutbtn
             // 
@@ -91,6 +100,7 @@
             this.LogOutbtn.TabIndex = 9;
             this.LogOutbtn.Text = "Log Out";
             this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
             // Exitbtn
             // 
@@ -117,29 +127,7 @@
             this.TimeSheetgrp.TabIndex = 11;
             this.TimeSheetgrp.TabStop = false;
             this.TimeSheetgrp.Text = "Time Sheet";
-            this.TimeSheetgrp.Enter += new System.EventHandler(this.TimeSheetgrp_Enter);
-            // 
-            // StartShiftWithEmployeeNumberbtn
-            // 
-            this.StartShiftWithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StartShiftWithEmployeeNumberbtn.Location = new System.Drawing.Point(20, 159);
-            this.StartShiftWithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.StartShiftWithEmployeeNumberbtn.Name = "StartShiftWithEmployeeNumberbtn";
-            this.StartShiftWithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
-            this.StartShiftWithEmployeeNumberbtn.TabIndex = 13;
-            this.StartShiftWithEmployeeNumberbtn.Text = "Start Shift With Employee Number";
-            this.StartShiftWithEmployeeNumberbtn.UseVisualStyleBackColor = true;
-            // 
-            // EndShiftwithEmployeeNumberbtn
-            // 
-            this.EndShiftwithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EndShiftwithEmployeeNumberbtn.Location = new System.Drawing.Point(327, 159);
-            this.EndShiftwithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.EndShiftwithEmployeeNumberbtn.Name = "EndShiftwithEmployeeNumberbtn";
-            this.EndShiftwithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
-            this.EndShiftwithEmployeeNumberbtn.TabIndex = 12;
-            this.EndShiftwithEmployeeNumberbtn.Text = "End Shift with Employee Number";
-            this.EndShiftwithEmployeeNumberbtn.UseVisualStyleBackColor = true;
+            this.TimeSheetgrp.Visible = false;
             // 
             // SignInToAJobbtn
             // 
@@ -152,6 +140,17 @@
             this.SignInToAJobbtn.Text = "Sign in to a Job";
             this.SignInToAJobbtn.UseVisualStyleBackColor = true;
             // 
+            // StartShiftWithEmployeeNumberbtn
+            // 
+            this.StartShiftWithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StartShiftWithEmployeeNumberbtn.Location = new System.Drawing.Point(20, 159);
+            this.StartShiftWithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.StartShiftWithEmployeeNumberbtn.Name = "StartShiftWithEmployeeNumberbtn";
+            this.StartShiftWithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
+            this.StartShiftWithEmployeeNumberbtn.TabIndex = 13;
+            this.StartShiftWithEmployeeNumberbtn.Text = "Start Shift With Employee Number";
+            this.StartShiftWithEmployeeNumberbtn.UseVisualStyleBackColor = true;
+            // 
             // SignOutOfAJobbtn
             // 
             this.SignOutOfAJobbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -162,6 +161,17 @@
             this.SignOutOfAJobbtn.TabIndex = 14;
             this.SignOutOfAJobbtn.Text = "Sign Out of a Job";
             this.SignOutOfAJobbtn.UseVisualStyleBackColor = true;
+            // 
+            // EndShiftwithEmployeeNumberbtn
+            // 
+            this.EndShiftwithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EndShiftwithEmployeeNumberbtn.Location = new System.Drawing.Point(327, 159);
+            this.EndShiftwithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EndShiftwithEmployeeNumberbtn.Name = "EndShiftwithEmployeeNumberbtn";
+            this.EndShiftwithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
+            this.EndShiftwithEmployeeNumberbtn.TabIndex = 12;
+            this.EndShiftwithEmployeeNumberbtn.Text = "End Shift with Employee Number";
+            this.EndShiftwithEmployeeNumberbtn.UseVisualStyleBackColor = true;
             // 
             // Jobgrp
             // 
@@ -175,78 +185,12 @@
             this.Jobgrp.Controls.Add(this.ViewJobByLastNamebtn);
             this.Jobgrp.Controls.Add(this.ViewJobByJobNumberbtn);
             this.Jobgrp.Controls.Add(this.ViewAllJobsByPhoneNumbersbtn);
-            this.Jobgrp.Location = new System.Drawing.Point(724, 41);
+            this.Jobgrp.Location = new System.Drawing.Point(723, 41);
             this.Jobgrp.Name = "Jobgrp";
             this.Jobgrp.Size = new System.Drawing.Size(657, 593);
             this.Jobgrp.TabIndex = 12;
             this.Jobgrp.TabStop = false;
-            this.Jobgrp.Text = "Jobs";
-            // 
-            // ViewAllOpenJobsbtn
-            // 
-            this.ViewAllOpenJobsbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ViewAllOpenJobsbtn.Location = new System.Drawing.Point(33, 256);
-            this.ViewAllOpenJobsbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ViewAllOpenJobsbtn.Name = "ViewAllOpenJobsbtn";
-            this.ViewAllOpenJobsbtn.Size = new System.Drawing.Size(284, 90);
-            this.ViewAllOpenJobsbtn.TabIndex = 13;
-            this.ViewAllOpenJobsbtn.Text = "View All Open Jobs";
-            this.ViewAllOpenJobsbtn.UseVisualStyleBackColor = true;
-            // 
-            // ViewJobByLastNamebtn
-            // 
-            this.ViewJobByLastNamebtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ViewJobByLastNamebtn.Location = new System.Drawing.Point(340, 146);
-            this.ViewJobByLastNamebtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ViewJobByLastNamebtn.Name = "ViewJobByLastNamebtn";
-            this.ViewJobByLastNamebtn.Size = new System.Drawing.Size(284, 90);
-            this.ViewJobByLastNamebtn.TabIndex = 6;
-            this.ViewJobByLastNamebtn.Text = "View Job by Last Name";
-            this.ViewJobByLastNamebtn.UseVisualStyleBackColor = true;
-            // 
-            // ViewJobByJobNumberbtn
-            // 
-            this.ViewJobByJobNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ViewJobByJobNumberbtn.Location = new System.Drawing.Point(33, 146);
-            this.ViewJobByJobNumberbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ViewJobByJobNumberbtn.Name = "ViewJobByJobNumberbtn";
-            this.ViewJobByJobNumberbtn.Size = new System.Drawing.Size(284, 90);
-            this.ViewJobByJobNumberbtn.TabIndex = 7;
-            this.ViewJobByJobNumberbtn.Text = "View Job by Job Number";
-            this.ViewJobByJobNumberbtn.UseVisualStyleBackColor = true;
-            // 
-            // ViewAllJobsByPhoneNumbersbtn
-            // 
-            this.ViewAllJobsByPhoneNumbersbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ViewAllJobsByPhoneNumbersbtn.Location = new System.Drawing.Point(340, 256);
-            this.ViewAllJobsByPhoneNumbersbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.ViewAllJobsByPhoneNumbersbtn.Name = "ViewAllJobsByPhoneNumbersbtn";
-            this.ViewAllJobsByPhoneNumbersbtn.Size = new System.Drawing.Size(284, 90);
-            this.ViewAllJobsByPhoneNumbersbtn.TabIndex = 12;
-            this.ViewAllJobsByPhoneNumbersbtn.Text = "View All Jobs by Phone Numbers";
-            this.ViewAllJobsByPhoneNumbersbtn.UseVisualStyleBackColor = true;
-            // 
-            // DeleteAJobbtn
-            // 
-            this.DeleteAJobbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DeleteAJobbtn.Location = new System.Drawing.Point(340, 35);
-            this.DeleteAJobbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.DeleteAJobbtn.Name = "DeleteAJobbtn";
-            this.DeleteAJobbtn.Size = new System.Drawing.Size(284, 90);
-            this.DeleteAJobbtn.TabIndex = 14;
-            this.DeleteAJobbtn.Text = "Delete a Job";
-            this.DeleteAJobbtn.UseVisualStyleBackColor = true;
-            // 
-            // CreateAJobbtn
-            // 
-            this.CreateAJobbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CreateAJobbtn.Location = new System.Drawing.Point(33, 35);
-            this.CreateAJobbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.CreateAJobbtn.Name = "CreateAJobbtn";
-            this.CreateAJobbtn.Size = new System.Drawing.Size(284, 90);
-            this.CreateAJobbtn.TabIndex = 15;
-            this.CreateAJobbtn.Text = "Create a Job";
-            this.CreateAJobbtn.UseVisualStyleBackColor = true;
+            this.Jobgrp.Text = "Job";
             // 
             // UpdateJobByLastNamebtn
             // 
@@ -281,12 +225,160 @@
             this.button4.Text = "Update All Jobs by Phone Numbers";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // CreateAJobbtn
+            // 
+            this.CreateAJobbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CreateAJobbtn.Location = new System.Drawing.Point(33, 35);
+            this.CreateAJobbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.CreateAJobbtn.Name = "CreateAJobbtn";
+            this.CreateAJobbtn.Size = new System.Drawing.Size(284, 90);
+            this.CreateAJobbtn.TabIndex = 15;
+            this.CreateAJobbtn.Text = "Create a Job";
+            this.CreateAJobbtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewAllOpenJobsbtn
+            // 
+            this.ViewAllOpenJobsbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewAllOpenJobsbtn.Location = new System.Drawing.Point(33, 256);
+            this.ViewAllOpenJobsbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewAllOpenJobsbtn.Name = "ViewAllOpenJobsbtn";
+            this.ViewAllOpenJobsbtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewAllOpenJobsbtn.TabIndex = 13;
+            this.ViewAllOpenJobsbtn.Text = "View All Open Jobs";
+            this.ViewAllOpenJobsbtn.UseVisualStyleBackColor = true;
+            // 
+            // DeleteAJobbtn
+            // 
+            this.DeleteAJobbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteAJobbtn.Location = new System.Drawing.Point(340, 35);
+            this.DeleteAJobbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.DeleteAJobbtn.Name = "DeleteAJobbtn";
+            this.DeleteAJobbtn.Size = new System.Drawing.Size(284, 90);
+            this.DeleteAJobbtn.TabIndex = 14;
+            this.DeleteAJobbtn.Text = "Delete a Job";
+            this.DeleteAJobbtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewJobByLastNamebtn
+            // 
+            this.ViewJobByLastNamebtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewJobByLastNamebtn.Location = new System.Drawing.Point(340, 146);
+            this.ViewJobByLastNamebtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewJobByLastNamebtn.Name = "ViewJobByLastNamebtn";
+            this.ViewJobByLastNamebtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewJobByLastNamebtn.TabIndex = 6;
+            this.ViewJobByLastNamebtn.Text = "View Job by Last Name";
+            this.ViewJobByLastNamebtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewJobByJobNumberbtn
+            // 
+            this.ViewJobByJobNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewJobByJobNumberbtn.Location = new System.Drawing.Point(33, 146);
+            this.ViewJobByJobNumberbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewJobByJobNumberbtn.Name = "ViewJobByJobNumberbtn";
+            this.ViewJobByJobNumberbtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewJobByJobNumberbtn.TabIndex = 7;
+            this.ViewJobByJobNumberbtn.Text = "View Job by Job Number";
+            this.ViewJobByJobNumberbtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewAllJobsByPhoneNumbersbtn
+            // 
+            this.ViewAllJobsByPhoneNumbersbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewAllJobsByPhoneNumbersbtn.Location = new System.Drawing.Point(340, 256);
+            this.ViewAllJobsByPhoneNumbersbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewAllJobsByPhoneNumbersbtn.Name = "ViewAllJobsByPhoneNumbersbtn";
+            this.ViewAllJobsByPhoneNumbersbtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewAllJobsByPhoneNumbersbtn.TabIndex = 12;
+            this.ViewAllJobsByPhoneNumbersbtn.Text = "View All Jobs by Phone Numbers";
+            this.ViewAllJobsByPhoneNumbersbtn.UseVisualStyleBackColor = true;
+            // 
+            // Customergrp
+            // 
+            this.Customergrp.Controls.Add(this.CreateCustomerbtn);
+            this.Customergrp.Controls.Add(this.ViewCustomerByKnownPhoneNumberbtn);
+            this.Customergrp.Controls.Add(this.DeleteCustomerbtn);
+            this.Customergrp.Controls.Add(this.ViewCustomersByJobNumberbtn);
+            this.Customergrp.Controls.Add(this.ViewAllCustomersbtn);
+            this.Customergrp.Controls.Add(this.UpdateCustomersbtn);
+            this.Customergrp.Location = new System.Drawing.Point(42, 447);
+            this.Customergrp.Name = "Customergrp";
+            this.Customergrp.Size = new System.Drawing.Size(657, 387);
+            this.Customergrp.TabIndex = 13;
+            this.Customergrp.TabStop = false;
+            this.Customergrp.Text = "Customer";
+            // 
+            // CreateCustomerbtn
+            // 
+            this.CreateCustomerbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CreateCustomerbtn.Location = new System.Drawing.Point(20, 260);
+            this.CreateCustomerbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.CreateCustomerbtn.Name = "CreateCustomerbtn";
+            this.CreateCustomerbtn.Size = new System.Drawing.Size(284, 90);
+            this.CreateCustomerbtn.TabIndex = 21;
+            this.CreateCustomerbtn.Text = "Create Customer";
+            this.CreateCustomerbtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewCustomerByKnownPhoneNumberbtn
+            // 
+            this.ViewCustomerByKnownPhoneNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewCustomerByKnownPhoneNumberbtn.Location = new System.Drawing.Point(20, 149);
+            this.ViewCustomerByKnownPhoneNumberbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewCustomerByKnownPhoneNumberbtn.Name = "ViewCustomerByKnownPhoneNumberbtn";
+            this.ViewCustomerByKnownPhoneNumberbtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewCustomerByKnownPhoneNumberbtn.TabIndex = 19;
+            this.ViewCustomerByKnownPhoneNumberbtn.Text = "View Customer by Known Phone Number";
+            this.ViewCustomerByKnownPhoneNumberbtn.UseVisualStyleBackColor = true;
+            // 
+            // DeleteCustomerbtn
+            // 
+            this.DeleteCustomerbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteCustomerbtn.Location = new System.Drawing.Point(327, 260);
+            this.DeleteCustomerbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.DeleteCustomerbtn.Name = "DeleteCustomerbtn";
+            this.DeleteCustomerbtn.Size = new System.Drawing.Size(284, 90);
+            this.DeleteCustomerbtn.TabIndex = 20;
+            this.DeleteCustomerbtn.Text = "Delete Customer";
+            this.DeleteCustomerbtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewCustomersByJobNumberbtn
+            // 
+            this.ViewCustomersByJobNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewCustomersByJobNumberbtn.Location = new System.Drawing.Point(327, 39);
+            this.ViewCustomersByJobNumberbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewCustomersByJobNumberbtn.Name = "ViewCustomersByJobNumberbtn";
+            this.ViewCustomersByJobNumberbtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewCustomersByJobNumberbtn.TabIndex = 16;
+            this.ViewCustomersByJobNumberbtn.Text = "View Customers by Job Number";
+            this.ViewCustomersByJobNumberbtn.UseVisualStyleBackColor = true;
+            // 
+            // ViewAllCustomersbtn
+            // 
+            this.ViewAllCustomersbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ViewAllCustomersbtn.Location = new System.Drawing.Point(20, 39);
+            this.ViewAllCustomersbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ViewAllCustomersbtn.Name = "ViewAllCustomersbtn";
+            this.ViewAllCustomersbtn.Size = new System.Drawing.Size(284, 90);
+            this.ViewAllCustomersbtn.TabIndex = 17;
+            this.ViewAllCustomersbtn.Text = "View All Customers";
+            this.ViewAllCustomersbtn.UseVisualStyleBackColor = true;
+            // 
+            // UpdateCustomersbtn
+            // 
+            this.UpdateCustomersbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdateCustomersbtn.Location = new System.Drawing.Point(327, 149);
+            this.UpdateCustomersbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.UpdateCustomersbtn.Name = "UpdateCustomersbtn";
+            this.UpdateCustomersbtn.Size = new System.Drawing.Size(284, 90);
+            this.UpdateCustomersbtn.TabIndex = 18;
+            this.UpdateCustomersbtn.Text = "Update Customers";
+            this.UpdateCustomersbtn.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.ControlBox = false;
+            this.Controls.Add(this.Customergrp);
             this.Controls.Add(this.Jobgrp);
             this.Controls.Add(this.TimeSheetgrp);
             this.Controls.Add(this.Exitbtn);
@@ -298,6 +390,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TimeSheetgrp.ResumeLayout(false);
             this.Jobgrp.ResumeLayout(false);
+            this.Customergrp.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,5 +418,12 @@
         private Button UpdateJobByLastNamebtn;
         private Button UpdateJobByJobNumberbtn;
         private Button button4;
+        private GroupBox Customergrp;
+        private Button CreateCustomerbtn;
+        private Button ViewCustomerByKnownPhoneNumberbtn;
+        private Button DeleteCustomerbtn;
+        private Button ViewCustomersByJobNumberbtn;
+        private Button ViewAllCustomersbtn;
+        private Button UpdateCustomersbtn;
     }
 }
