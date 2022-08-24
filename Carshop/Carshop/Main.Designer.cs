@@ -1,6 +1,6 @@
 ﻿namespace Carshop
 {
-    partial class Main
+    partial class Mainfrm
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,6 +38,11 @@
             this.StartShiftWithEmployeeNumberbtn = new System.Windows.Forms.Button();
             this.SignOutOfAJobbtn = new System.Windows.Forms.Button();
             this.EndShiftwithEmployeeNumberbtn = new System.Windows.Forms.Button();
+            this.SignOngrp = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Jobgrp = new System.Windows.Forms.GroupBox();
             this.UpdateJobByLastNamebtn = new System.Windows.Forms.Button();
             this.UpdateJobByJobNumberbtn = new System.Windows.Forms.Button();
@@ -56,6 +61,7 @@
             this.ViewAllCustomersbtn = new System.Windows.Forms.Button();
             this.UpdateCustomersbtn = new System.Windows.Forms.Button();
             this.TimeSheetgrp.SuspendLayout();
+            this.SignOngrp.SuspendLayout();
             this.Jobgrp.SuspendLayout();
             this.Customergrp.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +90,7 @@
             // 
             // LogInbtn
             // 
-            this.LogInbtn.Location = new System.Drawing.Point(1271, 933);
+            this.LogInbtn.Location = new System.Drawing.Point(198, 122);
             this.LogInbtn.Name = "LogInbtn";
             this.LogInbtn.Size = new System.Drawing.Size(75, 23);
             this.LogInbtn.TabIndex = 8;
@@ -94,7 +100,7 @@
             // 
             // LogOutbtn
             // 
-            this.LogOutbtn.Location = new System.Drawing.Point(1166, 933);
+            this.LogOutbtn.Location = new System.Drawing.Point(1124, 971);
             this.LogOutbtn.Name = "LogOutbtn";
             this.LogOutbtn.Size = new System.Drawing.Size(75, 23);
             this.LogOutbtn.TabIndex = 9;
@@ -123,7 +129,7 @@
             this.TimeSheetgrp.Controls.Add(this.EndShiftwithEmployeeNumberbtn);
             this.TimeSheetgrp.Location = new System.Drawing.Point(42, 41);
             this.TimeSheetgrp.Name = "TimeSheetgrp";
-            this.TimeSheetgrp.Size = new System.Drawing.Size(657, 384);
+            this.TimeSheetgrp.Size = new System.Drawing.Size(828, 490);
             this.TimeSheetgrp.TabIndex = 11;
             this.TimeSheetgrp.TabStop = false;
             this.TimeSheetgrp.Text = "Time Sheet";
@@ -172,6 +178,53 @@
             this.EndShiftwithEmployeeNumberbtn.TabIndex = 12;
             this.EndShiftwithEmployeeNumberbtn.Text = "End Shift with Employee Number";
             this.EndShiftwithEmployeeNumberbtn.UseVisualStyleBackColor = true;
+            // 
+            // SignOngrp
+            // 
+            this.SignOngrp.Controls.Add(this.textBox2);
+            this.SignOngrp.Controls.Add(this.textBox1);
+            this.SignOngrp.Controls.Add(this.label2);
+            this.SignOngrp.Controls.Add(this.label1);
+            this.SignOngrp.Controls.Add(this.LogInbtn);
+            this.SignOngrp.Location = new System.Drawing.Point(530, 840);
+            this.SignOngrp.Name = "SignOngrp";
+            this.SignOngrp.Size = new System.Drawing.Size(340, 180);
+            this.SignOngrp.TabIndex = 14;
+            this.SignOngrp.TabStop = false;
+            this.SignOngrp.Text = "Sign On";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(159, 81);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(159, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(99, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Password: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(93, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Username: ";
             // 
             // Jobgrp
             // 
@@ -372,23 +425,25 @@
             this.UpdateCustomersbtn.Text = "Update Customers";
             this.UpdateCustomersbtn.UseVisualStyleBackColor = true;
             // 
-            // Main
+            // Mainfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.ControlBox = false;
+            this.Controls.Add(this.SignOngrp);
             this.Controls.Add(this.Customergrp);
             this.Controls.Add(this.Jobgrp);
             this.Controls.Add(this.TimeSheetgrp);
-            this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.LogOutbtn);
-            this.Controls.Add(this.LogInbtn);
+            this.Controls.Add(this.Exitbtn);
             this.MaximizeBox = false;
-            this.Name = "Main";
+            this.Name = "Mainfrm";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TimeSheetgrp.ResumeLayout(false);
+            this.SignOngrp.ResumeLayout(false);
+            this.SignOngrp.PerformLayout();
             this.Jobgrp.ResumeLayout(false);
             this.Customergrp.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -425,5 +480,10 @@
         private Button ViewCustomersByJobNumberbtn;
         private Button ViewAllCustomersbtn;
         private Button UpdateCustomersbtn;
+        private GroupBox SignOngrp;
+        private Label label1;
+        private Label label2;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

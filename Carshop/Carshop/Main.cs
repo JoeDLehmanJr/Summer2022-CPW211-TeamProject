@@ -1,10 +1,10 @@
 
 namespace Carshop
 {
-    public partial class Main : Form
+    public partial class Mainfrm : Form
     {
         public Boolean isLogined = false;
-        public Main()
+        public Mainfrm()
         {
             InitializeComponent();
             Jobgrp.Visible = false;
@@ -12,6 +12,9 @@ namespace Carshop
             Customergrp.Visible = false;
             LogOutbtn.Visible = false;
             LogInbtn.Visible = true;
+            int x = 1920 / 2 - 170;
+            int y = 1080 / 2 - 90;
+            SignOngrp.Location = new Point(x, y);
         }
 
         private void LogInbtn_Click(object sender, EventArgs e)
@@ -37,6 +40,7 @@ namespace Carshop
                     isLogined = true;
                     break;
             }
+            SignOngrp.Visible = false;
         }
 
         private void Exitbtn_Click(object sender, EventArgs e)
@@ -66,6 +70,7 @@ namespace Carshop
                     isLogined = false;
                     break;
             }
+            SignOngrp.Visible = true;
         }
     }
 }
