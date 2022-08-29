@@ -28,16 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SignOutByLastNamebtn = new System.Windows.Forms.Button();
-            this.StartShiftwithLastNamebtn = new System.Windows.Forms.Button();
+            this.StartEndShiftwithLastNamebtn = new System.Windows.Forms.Button();
             this.LogInbtn = new System.Windows.Forms.Button();
             this.LogOutbtn = new System.Windows.Forms.Button();
             this.Exitbtn = new System.Windows.Forms.Button();
             this.TimeSheetgrp = new System.Windows.Forms.GroupBox();
             this.SignInToAJobbtn = new System.Windows.Forms.Button();
-            this.StartShiftWithEmployeeNumberbtn = new System.Windows.Forms.Button();
-            this.SignOutOfAJobbtn = new System.Windows.Forms.Button();
-            this.EndShiftwithEmployeeNumberbtn = new System.Windows.Forms.Button();
+            this.StartEndShiftWithEmployeeNumberbtn = new System.Windows.Forms.Button();
             this.SignOngrp = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -66,27 +63,17 @@
             this.Customergrp.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SignOutByLastNamebtn
+            // StartEndShiftwithLastNamebtn
             // 
-            this.SignOutByLastNamebtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SignOutByLastNamebtn.Location = new System.Drawing.Point(327, 49);
-            this.SignOutByLastNamebtn.Margin = new System.Windows.Forms.Padding(5);
-            this.SignOutByLastNamebtn.Name = "SignOutByLastNamebtn";
-            this.SignOutByLastNamebtn.Size = new System.Drawing.Size(284, 90);
-            this.SignOutByLastNamebtn.TabIndex = 6;
-            this.SignOutByLastNamebtn.Text = "Sign Out by Last Name";
-            this.SignOutByLastNamebtn.UseVisualStyleBackColor = true;
-            // 
-            // StartShiftwithLastNamebtn
-            // 
-            this.StartShiftwithLastNamebtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StartShiftwithLastNamebtn.Location = new System.Drawing.Point(20, 49);
-            this.StartShiftwithLastNamebtn.Margin = new System.Windows.Forms.Padding(5);
-            this.StartShiftwithLastNamebtn.Name = "StartShiftwithLastNamebtn";
-            this.StartShiftwithLastNamebtn.Size = new System.Drawing.Size(284, 90);
-            this.StartShiftwithLastNamebtn.TabIndex = 7;
-            this.StartShiftwithLastNamebtn.Text = "Start Shift with Last Name";
-            this.StartShiftwithLastNamebtn.UseVisualStyleBackColor = true;
+            this.StartEndShiftwithLastNamebtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StartEndShiftwithLastNamebtn.Location = new System.Drawing.Point(20, 49);
+            this.StartEndShiftwithLastNamebtn.Margin = new System.Windows.Forms.Padding(5);
+            this.StartEndShiftwithLastNamebtn.Name = "StartEndShiftwithLastNamebtn";
+            this.StartEndShiftwithLastNamebtn.Size = new System.Drawing.Size(284, 90);
+            this.StartEndShiftwithLastNamebtn.TabIndex = 7;
+            this.StartEndShiftwithLastNamebtn.Text = "Start / End Shift with Employee\'s Last Name";
+            this.StartEndShiftwithLastNamebtn.UseVisualStyleBackColor = true;
+            this.StartEndShiftwithLastNamebtn.Click += new System.EventHandler(this.StartEndShiftwithLastNamebtn_Click);
             // 
             // LogInbtn
             // 
@@ -122,14 +109,12 @@
             // 
             this.TimeSheetgrp.AutoSize = true;
             this.TimeSheetgrp.Controls.Add(this.SignInToAJobbtn);
-            this.TimeSheetgrp.Controls.Add(this.StartShiftWithEmployeeNumberbtn);
-            this.TimeSheetgrp.Controls.Add(this.SignOutOfAJobbtn);
-            this.TimeSheetgrp.Controls.Add(this.SignOutByLastNamebtn);
-            this.TimeSheetgrp.Controls.Add(this.StartShiftwithLastNamebtn);
-            this.TimeSheetgrp.Controls.Add(this.EndShiftwithEmployeeNumberbtn);
+            this.TimeSheetgrp.Controls.Add(this.StartEndShiftWithEmployeeNumberbtn);
+            this.TimeSheetgrp.Controls.Add(this.StartEndShiftwithLastNamebtn);
+            this.TimeSheetgrp.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TimeSheetgrp.Location = new System.Drawing.Point(42, 41);
             this.TimeSheetgrp.Name = "TimeSheetgrp";
-            this.TimeSheetgrp.Size = new System.Drawing.Size(828, 490);
+            this.TimeSheetgrp.Size = new System.Drawing.Size(328, 400);
             this.TimeSheetgrp.TabIndex = 11;
             this.TimeSheetgrp.TabStop = false;
             this.TimeSheetgrp.Text = "Time Sheet";
@@ -143,41 +128,21 @@
             this.SignInToAJobbtn.Name = "SignInToAJobbtn";
             this.SignInToAJobbtn.Size = new System.Drawing.Size(284, 90);
             this.SignInToAJobbtn.TabIndex = 15;
-            this.SignInToAJobbtn.Text = "Sign in to a Job";
+            this.SignInToAJobbtn.Text = "Sign in or off to a Job";
             this.SignInToAJobbtn.UseVisualStyleBackColor = true;
+            this.SignInToAJobbtn.Click += new System.EventHandler(this.SignInToAJobbtn_Click);
             // 
-            // StartShiftWithEmployeeNumberbtn
+            // StartEndShiftWithEmployeeNumberbtn
             // 
-            this.StartShiftWithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StartShiftWithEmployeeNumberbtn.Location = new System.Drawing.Point(20, 159);
-            this.StartShiftWithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.StartShiftWithEmployeeNumberbtn.Name = "StartShiftWithEmployeeNumberbtn";
-            this.StartShiftWithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
-            this.StartShiftWithEmployeeNumberbtn.TabIndex = 13;
-            this.StartShiftWithEmployeeNumberbtn.Text = "Start Shift With Employee Number";
-            this.StartShiftWithEmployeeNumberbtn.UseVisualStyleBackColor = true;
-            // 
-            // SignOutOfAJobbtn
-            // 
-            this.SignOutOfAJobbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SignOutOfAJobbtn.Location = new System.Drawing.Point(327, 270);
-            this.SignOutOfAJobbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.SignOutOfAJobbtn.Name = "SignOutOfAJobbtn";
-            this.SignOutOfAJobbtn.Size = new System.Drawing.Size(284, 90);
-            this.SignOutOfAJobbtn.TabIndex = 14;
-            this.SignOutOfAJobbtn.Text = "Sign Out of a Job";
-            this.SignOutOfAJobbtn.UseVisualStyleBackColor = true;
-            // 
-            // EndShiftwithEmployeeNumberbtn
-            // 
-            this.EndShiftwithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EndShiftwithEmployeeNumberbtn.Location = new System.Drawing.Point(327, 159);
-            this.EndShiftwithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.EndShiftwithEmployeeNumberbtn.Name = "EndShiftwithEmployeeNumberbtn";
-            this.EndShiftwithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
-            this.EndShiftwithEmployeeNumberbtn.TabIndex = 12;
-            this.EndShiftwithEmployeeNumberbtn.Text = "End Shift with Employee Number";
-            this.EndShiftwithEmployeeNumberbtn.UseVisualStyleBackColor = true;
+            this.StartEndShiftWithEmployeeNumberbtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StartEndShiftWithEmployeeNumberbtn.Location = new System.Drawing.Point(20, 159);
+            this.StartEndShiftWithEmployeeNumberbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.StartEndShiftWithEmployeeNumberbtn.Name = "StartEndShiftWithEmployeeNumberbtn";
+            this.StartEndShiftWithEmployeeNumberbtn.Size = new System.Drawing.Size(284, 90);
+            this.StartEndShiftWithEmployeeNumberbtn.TabIndex = 13;
+            this.StartEndShiftWithEmployeeNumberbtn.Text = "Start / End Shift With Employee Number";
+            this.StartEndShiftWithEmployeeNumberbtn.UseVisualStyleBackColor = true;
+            this.StartEndShiftWithEmployeeNumberbtn.Click += new System.EventHandler(this.StartEndShiftWithEmployeeNumberbtn_Click);
             // 
             // SignOngrp
             // 
@@ -238,9 +203,10 @@
             this.Jobgrp.Controls.Add(this.ViewJobByLastNamebtn);
             this.Jobgrp.Controls.Add(this.ViewJobByJobNumberbtn);
             this.Jobgrp.Controls.Add(this.ViewAllJobsByPhoneNumbersbtn);
+            this.Jobgrp.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Jobgrp.Location = new System.Drawing.Point(723, 41);
             this.Jobgrp.Name = "Jobgrp";
-            this.Jobgrp.Size = new System.Drawing.Size(657, 593);
+            this.Jobgrp.Size = new System.Drawing.Size(657, 599);
             this.Jobgrp.TabIndex = 12;
             this.Jobgrp.TabStop = false;
             this.Jobgrp.Text = "Job";
@@ -352,6 +318,7 @@
             this.Customergrp.Controls.Add(this.ViewCustomersByJobNumberbtn);
             this.Customergrp.Controls.Add(this.ViewAllCustomersbtn);
             this.Customergrp.Controls.Add(this.UpdateCustomersbtn);
+            this.Customergrp.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Customergrp.Location = new System.Drawing.Point(42, 447);
             this.Customergrp.Name = "Customergrp";
             this.Customergrp.Size = new System.Drawing.Size(657, 387);
@@ -452,17 +419,13 @@
         }
 
         #endregion
-
-        private Button SignOutByLastNamebtn;
-        private Button StartShiftwithLastNamebtn;
+        private Button StartEndShiftwithLastNamebtn;
         private Button LogInbtn;
         private Button LogOutbtn;
         private Button Exitbtn;
         private GroupBox TimeSheetgrp;
-        private Button StartShiftWithEmployeeNumberbtn;
-        private Button EndShiftwithEmployeeNumberbtn;
+        private Button StartEndShiftWithEmployeeNumberbtn;
         private Button SignInToAJobbtn;
-        private Button SignOutOfAJobbtn;
         private GroupBox Jobgrp;
         private Button ViewAllOpenJobsbtn;
         private Button ViewJobByLastNamebtn;
