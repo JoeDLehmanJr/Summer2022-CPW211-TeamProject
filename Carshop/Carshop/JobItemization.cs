@@ -10,7 +10,7 @@ namespace Carshop
     {
         private int _jobItemizationId;
 
-        public JobItemization(string jobType, double itemCost)
+        public JobItemization(string jobType, string itemCost)
         {
             JobType = jobType;
             ItemCost = itemCost;
@@ -24,6 +24,6 @@ namespace Carshop
 
         public string JobType { get; set; }
 
-        public double ItemCost { get; set; }
+        public string ItemCost { get; set; }
     }
 }

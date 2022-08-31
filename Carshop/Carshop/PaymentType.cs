@@ -10,10 +10,10 @@ namespace Carshop
     {
         private int _paymentTypeId;
 
-        public PaymentType(string cardType, int cardNumber, DateTime dateOfExpiration, 
-            int cvs, int authorizationNumber)
+        public PaymentType(string cardType, string cardNumber, string dateOfExpiration, 
+            string cvs, string authorizationNumber)
         {
-
+            
         }
 
         public int PaymentTypeId
@@ -24,13 +24,13 @@ namespace Carshop
 
         public string CardType { get; set; }
 
-        public int CardNumber { get; set; }
+        public string CardNumber { get; set; }
 
-        public DateTime DateOfExpiration { get; set; }
+        public string DateOfExpiration { get; set; }
 
-        public int Cvs { get; set; }
+        public string Cvs { get; set; }
 
-        public int AuthorizationNumber { get; set; }
+        public string AuthorizationNumber { get; set; }
 
     }
 }

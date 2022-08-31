@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Carshop",
+    "\\Carshop\\Carshop"
   ],
-  "SelectedNode": "\\Carshop.sln",
+  "SelectedNode": "\\Carshop\\Carshop.sln",
   "PreviewInSolutionExplorer": false
 }

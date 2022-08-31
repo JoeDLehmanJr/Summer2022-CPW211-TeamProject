@@ -10,7 +10,7 @@ namespace Carshop
     {
         private int _autoShopId;
 
-        public AutoShop(string make, string model, DateTime Year, string status)
+        public AutoShop(string make, string model, string releaseYear, string status)
         {
             Make = make;
             Model = model;
@@ -26,7 +26,8 @@ namespace Carshop
 
         public string Model { get; set; }
 
-        public DateTime Year { get; set; }
+        public string releaseYear { get; set; }
 
+        public string userStatus { get; set; }
     }
 }

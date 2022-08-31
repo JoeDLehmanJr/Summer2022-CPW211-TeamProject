@@ -10,10 +10,12 @@ namespace Carshop
     {
         private int _customersId;
 
-        public Customers(string firstName, string lastName)
+        public Customers(string firstName, string lastName, string payment)
         {
             FirstName = firstName;
             LastName = lastName;
+            Payment = payment;
+
         }
 
         public int CustomersId
@@ -25,6 +27,8 @@ namespace Carshop
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
+        public string Payment { get; set; }
 
         public string FullName
         {
